@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>ReptoTerra Admin Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background:#fefefe; font-family: 'Montserrat', sans-serif; }
+
+        .sidebar { height:100vh; background:#fcfbfb; padding-top:20px; }
+        .sidebar a { color:#080808; padding:14px 20px; cursor:pointer; }
+        .sidebar a.active { background:#4d6b4d81; border-left:4px solid #364f36f8; }
+
+        .topbar { background:#fff; border-bottom:2px solid #d3c9b8; }
+        .hidden { display:none; }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP MENU -->
+    <nav class="navbar navbar-expand-lg topbar px-4 py-3 shadow-sm">
+        <span class="navbar-brand fw-bold" style="color:#2f402f;">ReptoTerra Admin Panel</span>
+
+        <div class="ms-auto d-flex gap-4 align-items-center">
+            <span class="fw-bold">Admin</span>
+            <a href="index.html" class="btn btn-outline-danger btn-sm">Çıkış Yap</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <div class="col-md-3 col-lg-2 p-0 sidebar">
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action active" data-page="page-dashboard">Dashboard</a>
+                    <a class="list-group-item list-group-item-action" data-page="page-sablon">Şablon Yönetimi</a>
+                    <a class="list-group-item list-group-item-action" data-page="page-slider">Slider Yönetimi</a>
+                    <a class="list-group-item list-group-item-action" data-page="page-urun">Ürün Yönetimi</a>
+                    <a class="list-group-item list-group-item-action" data-page="page-duyuru">Duyuru Yönetimi</a>
+                    
+                </div>
+            </div>
+
+            <!-- MAIN CONTENT AREA -->
+            <div class="col-md-9 col-lg-10 p-4">
+
+                <!-- DASHBOARD -->
+                <div id="page-dashboard">
+                    <h3 class="fw-bold" style="color:#2f402f;">Dashboard</h3>
+                    <div id="page-dashboard">
+   
+
+    <div class="alert alert-success shadow-sm fw-bold ">
+        ✔ Sistem Güncel! Yeni sipariş hareketleri mevcut.
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow" style="background:#deae6f80; color:#fff;">
+                <h6 class="m-0">Bugünkü Ziyaretçi</h6>
+                <h2 class="fw-bold mt-2">1.250</h2>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow" style="background:#4d6b4db0; color:#fff;">
+                <h6 class="m-0">Toplam Ürün</h6>
+                <h2 class="fw-bold mt-2">320</h2>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow" style="background:#9a4d3f9b; color:#fff;">
+                <h6 class="m-0">Bekleyen Sipariş</h6>
+                <h2 class="fw-bold mt-2">12</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <h5 class="fw-bold mt-4 mb-3" style="color:#2f402f;">Son Siparişler</h5>
+
+    <table class="table table-bordered shadow-sm">
+        <thead>
+            <tr>
+                <th>Sipariş No</th>
+                <th>Müşteri</th>
+                <th>Toplam</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>#2051</td><td>Ali K.</td><td>450₺</td><td><span class="badge bg-success">Hazırlanıyor</span></td></tr>
+            <tr><td>#2050</td><td>Merve S.</td><td>280₺</td><td><span class="badge bg-success">Tamamlandı</span></td></tr>
+            <tr><td>#2049</td><td>Deniz Ç.</td><td>720₺</td><td><span class="badge bg-success ">Kargoda</span></td></tr>
+        </tbody>
+    </table>
+</div>
+
+                </div>
+
+                <!-- ŞABLON -->
+                <div id="page-sablon" class="hidden">
+
+    <h3 class="fw-bold mb-4" style="color:#2f402f;">Şablon Yönetimi</h3>
+
+    <div class="p-4 bg-white shadow rounded">
+
+        <h5 class="fw-bold mb-3">Tema Renkleri</h5>
+
+        <label class="fw-bold">Ana Tema Rengi:</label>
+        <input type="color" value="#2f402f" class="form-control form-control-color mb-3">
+
+        <label class="fw-bold">Arka Plan Rengi:</label>
+        <input type="color" value="#fefefe" class="form-control form-control-color mb-3">
+
+        <button class="btn btn-success mt-2">Kaydet</button>
+
+    </div>
+
+    <div class="p-4 bg-white shadow rounded mt-4">
+        <h5 class="fw-bold mb-3">Logo Yükle</h5>
+
+        <input type="file" class="form-control mb-3">
+
+        <button class="btn btn-primary">Yükle</button>
+    </div>
+
+</div>
+
+
+                <!-- SLIDER -->
+                <div id="page-slider" class="hidden">
+
+    <h3 class="fw-bold mb-4" style="color:#2f402f;">Slider Yönetimi</h3>
+
+    <div class="p-4 bg-white shadow rounded mb-4">
+        <h5 class="fw-bold mb-3">Yeni Slider Ekle</h5>
+
+        <label class="fw-bold">Slider Başlık:</label>
+        <input type="text" class="form-control mb-3" placeholder="Örn: Özel Kış İndirimi">
+
+        <label class="fw-bold">Slider Görseli:</label>
+        <input type="file" class="form-control mb-3">
+
+        <button class="btn btn-success">Ekle</button>
+    </div>
+
+    <h5 class="fw-bold mb-3">Mevcut Sliderlar</h5>
+
+    <table class="table table-bordered shadow">
+        <thead>
+            <tr><th>ID</th><th>Başlık</th><th>Görsel</th><th>İşlem</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kampanya Başladı</td>
+                <td><img src="https://via.placeholder.com/80"></td>
+                <td><button class="btn btn-danger btn-sm">Sil</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+                <div id="page-urun" class="hidden">
+
+    <h3 class="fw-bold mb-4" style="color:#2f402f;">Ürün Yönetimi</h3>
+
+    <div class="p-4 bg-white shadow rounded mb-4">
+        <h5 class="fw-bold mb-3">Yeni Ürün Ekle</h5>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label class="fw-bold">Ürün Adı:</label>
+                <input class="form-control mb-3" type="text">
+            </div>
+
+            <div class="col-md-4">
+                <label class="fw-bold">Fiyat:</label>
+                <input class="form-control mb-3" type="number">
+            </div>
+
+            <div class="col-md-4">
+                <label class="fw-bold">Açıklama:</label>
+                <input class="form-control mb-3" type="number">
+            </div>
+        </div>
+
+        <label class="fw-bold">Ürün Görseli:</label>
+        <input type="file" class="form-control mb-3">
+
+        <button class="btn btn-success">Kaydet</button>
+    </div>
+
+    <h5 class="fw-bold">Ürün Listesi</h5>
+
+    <table class="table table-bordered shadow">
+        <thead>
+            <tr><th>ID</th><th>Ad</th><th>Fiyat</th><th>Açıklama</th><th>İşlem</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Tropikal Bitki</td><td>150₺</td><td>32</td><td><button class="btn btn-warning">Düzenle</button></td></tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+                <div id="page-duyuru" class="hidden">
+
+    <h3 class="fw-bold mb-4" style="color:#2f402f;">Duyuru Yönetimi</h3>
+
+    <div class="p-4 bg-white shadow rounded mb-4">
+        <h5 class="fw-bold mb-3">Yeni Duyuru Ekle</h5>
+
+        <label class="fw-bold">Başlık:</label>
+        <input class="form-control mb-3">
+
+        <label class="fw-bold">Açıklama:</label>
+        <textarea class="form-control mb-3" rows="3"></textarea>
+
+        <button class="btn btn-success">Oluştur</button>
+    </div>
+
+    <h5 class="fw-bold mb-3">Mevcut Duyurular</h5>
+
+    <div class="p-3 bg-white shadow rounded mb-2">
+        <h6 class="fw-bold">Bakım Çalışması</h6>
+        <p>Bu gece 02:00 - 04:00 arası sistem güncellenecek.</p>
+        <button class="btn btn-danger btn-sm">Sil</button>
+    </div>
+
+</div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS: Dinamik Sayfa Geçişi -->
+    <script>
+        const menuLinks = document.querySelectorAll('.sidebar a');
+        const pages = document.querySelectorAll('[id^="page-"]');
+
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+
+                // Menü aktifliği değiştir
+                menuLinks.forEach(a => a.classList.remove("active"));
+                link.classList.add("active");
+
+                // Sayfaları yönet
+                const pageToShow = link.getAttribute("data-page");
+
+                pages.forEach(page => {
+                    if (page.id === pageToShow) page.classList.remove("hidden");
+                    else page.classList.add("hidden");
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

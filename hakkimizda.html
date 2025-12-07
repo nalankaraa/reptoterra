@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Kütüphaneler -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Vendor ve custom css: Dosya yolunu kontrol et -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Eğer style.css aynı klasördeyse aşağıdaki doğru; değilse "css/style.css" yap -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Hakkımızda</title>
+</head>
+
+<body>
+    <header>
+    <div class="container py-2">
+        <div class="row py-4 pb-0 pb-sm-4 align-items-center">
+
+            <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <hr class="m-0">
+    </div>
+
+    <div class="container">
+        <nav class="main-menu d-flex navbar navbar-expand-lg">
+
+            <div class="d-flex d-lg-none align-items-end mt-3">
+                <ul class="d-flex justify-content-end list-unstyled m-0">
+                    <li>
+                        <a href="#" class="mx-3">
+                            <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                           aria-controls="offcanvasCart">
+                            <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                           aria-controls="offcanvasSearch">
+                            <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header justify-content-center">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body justify-content-between">
+
+                    <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">Ana Sayfa</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
+                               aria-expanded="false">Ürünlerimiz</a>
+                            <ul class="dropdown-menu" aria-labelledby="pages">
+                                <li><a href="teraryum-kaplar.html" class="dropdown-item">Teraryumlar ve Kaplar</a></li>
+                                <li><a href="isitma-aydinlatma.html" class="dropdown-item">Isıtma ve Aydınlatma</a></li>
+                                <li><a href="dekorasyon-zemin.html" class="dropdown-item">Dekorasyon ve Zemin</a></li>
+                                <li><a href="yem.html" class="dropdown-item">Sürüngen Yemi</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="hakkimizda.html" class="nav-link active">Hakkımızda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="iletisim.html" class="nav-link">İletişim</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-flex align-items-end">
+                        <ul class="d-flex justify-content-end list-unstyled m-0">
+                            <li>
+                                <a href="#" class="mx-3" data-bs-toggle="modal" data-bs-target="#adminLoginModal">
+                                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="index.html" class="mx-3" data-bs-toggle="offcanvas"
+                                   data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div> <!-- offcanvas-body -->
+            </div> <!-- offcanvas -->
+
+        </nav>
+    </div>
+</header>
+
+
+    <!-- SLIDER -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" style="background-image:url('images/my-images/slide1.png')">
+                <div class="slide-text">Biz Kimiz?</div>
+            </div>
+            <div class="slide" style="background-image:url('images/my-images/slide2.png')">
+                <div class="slide-text">Deneyim & Güven</div>
+            </div>
+            <div class="slide" style="background-image:url('images/my-images/slide3.png')">
+                <div class="slide-text">Profesyonel Ekip</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+   
+    <section class="about-intro container">
+        <h2 class="text-center ">Hakkımızda</h2>
+        <p class="text-center">
+            Sürüngenleri seven insanların bir araya gelmesiyle doğan ReptoTerra, evcil dostlarımızın ihtiyaç duyduğu her şeyi kolayca bulabilmeniz için kurulmuş bir mağazadır.
+        </p>
+        <p class="text-center">
+            İster yeni başlayan olun ister yıllardır sürüngen besleyin; teraryum kurulumundan yem seçimine kadar her aşamada yanınızda olmaktan mutluluk duyuyoruz. Doğal yaşam alanı dekorları, güvenli ısıtma ürünleri, sağlıklı canlı–kuru yemler ve daha fazlasıyla siz ve minik dostlarınıza hizmet veriyoruz.
+        </p>
+    </section>
+
+    <!-- MISSION - VISION -->
+    <section class="mission-vision container">
+    <div class="value-card">
+        <h3>Misyonumuz</h3>
+        <p>Sürüngen sahiplerine; doğru teraryum kurulumundan uygun yem seçimine kadar bilgi, destek ve güvenilir alışveriş deneyimi sunarak dostlarımızın yaşam kalitesini yükseltmek.
+        Her siparişte hızlı teslimat, şeffaf içerik ve özenli paketleme ile sürdürülebilir bir müşteri memnuniyeti yaratmak.</p>
+    </div>
+
+    <div class="value-card">
+        <h3>Vizyonumuz</h3>
+        <p>Sürüngen sağlığına yönelik yenilikçi ürünler, doğal yaşam alanı çözümleri ve kullanıcı dostu hizmetlerle; evcil sürüngen bakımını daha bilinçli, daha kolay ve daha keyifli hale getirmek.
+        Sürüngenlere ilgi duyan herkes için bilgi kaynağı, güvenilir alışveriş noktası ve ilham veren global bir marka olmak.</p>
+    </div>
+</section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Neden Bizi Seçmelisiniz?</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:check-circle"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Kaliteli Ürünler</h4>
+                        <p>Sürüngenlerin sağlığı için en iyi ürünleri dikkatle seçeriz.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:truck-fast"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Hızlı Teslimat</h4>
+                        <p>Siparişleriniz 1-2 gün içinde kapınıza ulaşır.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:headset"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Müşteri Desteği</h4>
+                        <p>7/24 müşteri hizmetlerimiz her zaman yardımcı olmaya hazır.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:shield-check"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Güvenli Alışveriş</h4>
+                        <p>Ödeme ve kişisel bilgileriniz tamamen güvende.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:leaf"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Doğal Ürünler</h4>
+                        <p>Sürüngeleriniz için 100% doğal ve organik seçenekler.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <iconify-icon icon="mdi:star"></iconify-icon>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Uzman Tavsiye</h4>
+                        <p>Deneyimli uzmanlarımız her zaman tavsiye vermek için hazır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="container py-5">
+        
+        <h2 class="text-center mb-4">Ekibimiz</h2>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="images/my-images/person1.png" alt="">
+                <h4 class="mt-3">Ahmet Yılmaz</h4>
+                <p>Kurucu & CEO</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/my-images/person2.png" alt="">
+                <h4 class="mt-3">Elif Korkmaz</h4>
+                <p>Proje Yöneticisi</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/my-images/person3.png" alt="">
+                <h4 class="mt-3">Mehmet Demir</h4>
+                <p>Yazılım Uzmanı</p>
+            </div>
+        </div>
+        
+    </section>
+<hr>
+     <footer id="footer" class="my-5">
+        <div class="container py-5 my-5">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <img src="images/lizard_logo(2).png" alt="logo"> 
+                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        
+                        <div class="social-list">
+                            <h3>Bizi Takip Edin</h3>
+                            <div class="social-item">
+                            <a href="https://instagram.com/" target="_blank" class="social-item">
+                                <iconify-icon icon="mdi:instagram"></iconify-icon>
+                                <span>Instagram</span>
+                            </a>
+                        </div> 
+                        </div>  
+                        
+                        <div class="social-item">
+                            <a href="https://facebook.com/" target="_blank" class="social-item">
+                                <iconify-icon icon="mdi:facebook"></iconify-icon>
+                                <span>Facebook</span>
+                            </a>
+                            </div>
+                            <div class="social-item">
+
+                            <a href="https://youtube.com/" target="_blank" class="social-item">
+                                <iconify-icon icon="mdi:youtube"></iconify-icon>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                        <div class="social-item">
+
+                            <a href="https://twitter.com/" target="_blank" class="social-item">
+                                <iconify-icon icon="mdi:twitter"></iconify-icon>
+                                <span>Twitter</span>
+                            </a>
+                            </div>
+                    </div>
+                
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>Quick Links</h3>
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item">
+                                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="iletisim.html" class="nav-link">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>
+                            Bize Ulaşın</h5>
+                            <ul class="menu-list list-unstyled">
+                                <li class="menu-item">
+                                    <i>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.001 3H4.00098M4.00092 6C6.55164 8.76672 11.5943 13.9543 12.0009 13.9543C12.5342 13.9543 17.4502 8.53616 20.0009 6M8.54941 13.2808C6.97952 14.8943 5.2102 16.7443 4.00096 17.9467L8.54941 13.2808ZM20.001 17.9467C18.8146 16.6599 17.1167 14.8495 15.586 13.2808L20.001 17.9467ZM23.001 5V19C23.001 20.1046 22.1055 21 21.001 21H3.00098C1.89641 21 1.00098 20.1046 1.00098 19V5C1.00098 3.89543 1.89641 3 3.00098 3H21.001C22.1055 3 23.001 3.89543 23.001 5Z" stroke="#0E1023" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+
+                                        </i>
+                                    <a href="info@reptoterra.com" class="nav-link">Email</a>
+                                    <i>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.89837 2.3127L10.2646 5.86369C10.6818 6.30403 10.682 6.99403 10.2653 7.43474L8.63803 9.15535C9.65979 12.2609 11.9448 14.7453 14.8408 15.9201L15.165 16.0452L16.7075 14.4143C17.1408 13.9562 17.863 13.9363 18.3207 14.37L21.687 17.921C22.1041 18.3613 22.1044 19.0513 21.6876 19.492L20.8505 20.3772C19.3216 21.9938 16.9933 22.4494 14.9483 21.5321C12.0576 20.2355 9.72511 18.6508 7.95078 16.7778C6.17642 14.9048 4.67439 12.4418 3.44468 9.38898C2.60952 7.31569 2.97176 4.96539 4.35473 3.35042L4.53291 3.15245L5.28522 2.35697C5.71847 1.89887 6.44069 1.87905 6.89837 2.3127Z" stroke="#0E1023" stroke-linecap="round"></path>
+                                     </svg>
+
+                                        </i>
+                                </li>
+                                <li class="menu-item">
+                                <a href="#" class="nav-link">+90 212 555 55 55</a>
+                                </li>
+                                
+                            </ul>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+    <footer class="bg-dark text-light py-4 text-center">
+        © 2025 Reptoterra – Tüm hakları saklıdır.
+    </footer>
+
+
+
+<!-- Admin Giriş Modal -->
+<div class="modal fade" id="adminLoginModal" tabindex="-1" aria-labelledby="adminLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+
+            <!-- Başlık Alanı -->
+            <div class="modal-header" style="background:#9a4d3fb9; color:white; border-bottom:3px solid white;">
+                <h5 class="modal-title d-flex align-items-center gap-2" id="adminLoginLabel">
+                    <iconify-icon icon="mdi:shield-account" class="fs-4 fw fw-semibold"></iconify-icon>
+                    Yönetici Girişi
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- İçerik -->
+            <div class="modal-body p-4" style="background:white;">
+                <form action="admin-panel.html" method="GET">
+
+                    <!-- Kullanıcı Adı -->
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Kullanıcı Adı</label>
+                        <input type="text" class="form-control custom-input" required>
+                    </div>
+
+                    <!-- Şifre -->
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Şifre</label>
+                        <input type="password" class="form-control custom-input" required>
+                    </div>
+
+                    <button class="btn w-100 mt-3"
+                            style="background:#8fbc8f; color:white; font-weight:600; border-radius:10px;">
+                        <iconify-icon icon="mdi:login" class="me-1"></iconify-icon> Giriş Yap
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Ekstra Stil -->
+<style>
+    .custom-input {
+        border-radius: 10px;
+        padding: 10px 12px;
+        border: 2px solid #ffffff;
+        transition: all .2s ease;
+        background: #ffffff;
+    }
+
+    .custom-input:focus {
+        border-color: #8fbc8f !important;
+        box-shadow: 0 0 0 0.15rem rgba(143, 188, 143, 0.4);
+        background: rgb(255, 255, 255);
+    }
+
+    .modal-content {
+        animation: modalPop .25s ease;
+    }
+
+    @keyframes modalPop {
+        from { transform: scale(0.95); opacity:0; }
+        to { transform: scale(1); opacity:1; }
+    }
+</style>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        </script>
+
+</body>
+</html>
